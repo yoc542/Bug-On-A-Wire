@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug on a wire</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+        body {
+            margin: 0;
+            background: url("./Assets/sky.jpg");
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Press Start 2P", system-ui;
+        }
+
+        #gameCanvas {
+            border: 1px solid #000;
+            margin-inline-start: 0px;
+            width: 100%;
+            background-size: cover;
+            background-image: url("./Assets/sky2.jpg");
+            animation: moveBackground 15s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 100%;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        #gamedetails {
+            /* background-color: #DFC5FE; */
+            background-color: rgba(223, 197, 254, 0.5);
+            box-shadow: -5px 0px 5px rgba(151, 94, 222, 0.2);
+            width: 500px;
+        }
+
+        #timer {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        h1 {
+            margin-top: 180px;
+            font-size: 40px;
+            line-height: 73px;
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 24px;
+        }
+
+        h3 {
+            margin-top: 60px;
+            font-size: 19px;
+            line-height: 40px;
+
+            margin-inline: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>Bug on a wire </div> -->
+    <div class="flex">
+        <div id="gamedetails">
+            <h1>Bug on A Wire</h1>
+            <h2>Score:</h2>
+            <div id="timer">00: 00: 00: 00</div>
+            <h3>Press Spacebar to begin the game</h3>
+        </div>
+
+        <div id="gameField">
+            <canvas id="gameCanvas" width="750" height="800"> </canvas>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+
+</html>

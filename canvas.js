@@ -195,8 +195,8 @@ function animateRectangles() {
       gameOverDiv.innerText = "Game Over! Click to restart.";
       gameOverDiv.style.fontSize = "18px";
       gameOverDiv.style.position = "absolute";
-      gameOverDiv.style.top = "42%";
-      gameOverDiv.style.left = "58%";
+      gameOverDiv.style.top = "45%";
+      gameOverDiv.style.left = "57%";
       gameOverDiv.style.width = "200px";
       gameOverDiv.style.height = "85px";
       gameOverDiv.style.boxShadow = "5px 5px 10px rgba(0, 0, 0, 0.3)";
